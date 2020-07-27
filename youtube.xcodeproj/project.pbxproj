@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AF4DF58B24CF09D9003CBD00 /* ConstantsTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4DF58A24CF09D9003CBD00 /* ConstantsTemplate.swift */; };
 		AFFF08A424CB1CBD0065D74E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFF08A324CB1CBD0065D74E /* AppDelegate.swift */; };
 		AFFF08A624CB1CBD0065D74E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFF08A524CB1CBD0065D74E /* SceneDelegate.swift */; };
 		AFFF08A824CB1CBD0065D74E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFF08A724CB1CBD0065D74E /* ViewController.swift */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AF4DF58A24CF09D9003CBD00 /* ConstantsTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstantsTemplate.swift; sourceTree = "<group>"; };
 		AFFF08A024CB1CBD0065D74E /* youtube.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = youtube.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFFF08A324CB1CBD0065D74E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AFFF08A524CB1CBD0065D74E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -75,6 +77,7 @@
 				AFFF08B924CB5E950065D74E /* Video.swift */,
 				AFFF08BB24CB5EF10065D74E /* Model.swift */,
 				AFFF08BD24CB6E700065D74E /* Response.swift */,
+				AF4DF58A24CF09D9003CBD00 /* ConstantsTemplate.swift */,
 			);
 			path = youtube;
 			sourceTree = "<group>";
@@ -153,6 +156,7 @@
 				AFFF08A824CB1CBD0065D74E /* ViewController.swift in Sources */,
 				AFFF08A424CB1CBD0065D74E /* AppDelegate.swift in Sources */,
 				AFFF08A624CB1CBD0065D74E /* SceneDelegate.swift in Sources */,
+				AF4DF58B24CF09D9003CBD00 /* ConstantsTemplate.swift in Sources */,
 				AFFF08BC24CB5EF10065D74E /* Model.swift in Sources */,
 				AFFF08B824CB5D3E0065D74E /* Constants.swift in Sources */,
 				AFFF08BA24CB5E950065D74E /* Video.swift in Sources */,
