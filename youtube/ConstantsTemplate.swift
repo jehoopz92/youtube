@@ -10,9 +10,10 @@
 
 import Foundation
 
-//struct Constants {
-//
-//    static var API_KEY = ""
-//    static var PLAYLISTID = ""
-//    static var API_URL = "https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&playlistId=\(Constants.PLAYLISTID)&key=\(Constants.API_KEY)"
-//}
+struct Constants {
+
+    static var API_KEY = ""
+    static var PLAYLISTID = ""
+    static var API_URL = "https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&playlistId=\(Constants.PLAYLISTID)&key=\(Constants.API_KEY)"
+    static var VIDEOCELL_ID = "VideoCell"
+}
