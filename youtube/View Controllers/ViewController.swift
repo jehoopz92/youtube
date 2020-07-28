@@ -30,6 +30,24 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         model.getVideos()
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        // Confirm that a video was selected
+        guard tableView.indexPathForSelectedRow != nil else {
+            return
+        }
+        
+        // Get a reference to the video that was tapped on
+        let selectedVideo = videos[tableView.indexPathForSelectedRow!.row]
+        
+        // Get a reference to the detail view controller
+        let detailVC = segue.destination as! DetailViewController
+        
+        // Set the video property of the detail view controller
+        detailVC.video = selectedVideo
+        
+    }
+    
     // MARK: - Model delegate methods
     func videosFetched(_ videos: [Video]) {
         
@@ -49,13 +67,13 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: Constants.VIDEOCELL_ID, for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: Constants.VIDEOCELL_ID, for: indexPath) as! VideoTableViewCell
         
         // Config the cell with data
         // Get the title for the video
-        let title = self.videos[indexPath.row].title
+        let video = self.videos[indexPath.row]
         
-        cell.textLabel?.text = title
+        cell.setCell(video)
         
         // Return the cell
         return cell
